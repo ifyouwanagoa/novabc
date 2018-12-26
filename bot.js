@@ -10,9 +10,7 @@ client.user.setGame(`♥ ℕova BC™ ♥ `,'https://www.twitch.tv/ℕ o v a Cod
      
 const Discord = require('discord.js');
 const client = new Discord.Client();
-
-client.on('ready', () => {
-  console.log('I am ready!');
+  } 
 });
 client.on('message',async message => {//Toxic Code
   if(message.author.bot || message.channel.type === '!bc') return;
