@@ -1,13 +1,8 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-   var prefix = "!" ;
-
-// playing
-client.on('ready', () => {                           
-client.user.setGame(`♥ ℕova BC™ ♥ `,'https://www.twitch.tv/ℕ o v a Codes♥');
-  })
-  } 
+client.on('ready', () => {
+  console.log('I am ready!');
 });
 client.on('message',async message => {//Toxic Code
   if(message.author.bot || message.channel.type === '!bc') return;
@@ -19,16 +14,16 @@ client.on('message',async message => {//Toxic Code
     let msgCount = 0;
     let errorCount = 0;
     let successCount = 0;
-    message.channel.send(`**- [ :bookmark: :: ${msgCount} ] ・عدد الرسائل المرسلة**\n**- [ :inbox_tray: :: ${successCount} ] ・عدد الرسائل المستلمة**\n**- [ :outbox_tray: :: ${errorCount} ]・عدد الرسائل الغير مستلمة**`).then(msg => {//Toxic Code
+    message.channel.send(`**- [ :bookmark: :: ${msgCount} ] ?عدد الرسائل المرسلة**\n**- [ :inbox_tray: :: ${successCount} ] ?عدد الرسائل المستلمة**\n**- [ :outbox_tray: :: ${errorCount} ]?عدد الرسائل الغير مستلمة**`).then(msg => {//Toxic Code
       message.guild.members.forEach(g => {//Toxic Code
         g.send(args.slice(1).join(' ')).then(() => {//Toxic Code
           successCount++;
           msgCount++;
-          msg.edit(`**- [ :bookmark: :: ${msgCount} ] ・عدد الرسائل المرسلة**\n**- [ :inbox_tray: :: ${successCount} ] ・عدد الرسائل المستلمة**\n**- [ :outbox_tray: :: ${errorCount} ]・عدد الرسائل الغير مستلمة**`);
+          msg.edit(`**- [ :bookmark: :: ${msgCount} ] ?عدد الرسائل المرسلة**\n**- [ :inbox_tray: :: ${successCount} ] ?عدد الرسائل المستلمة**\n**- [ :outbox_tray: :: ${errorCount} ]?عدد الرسائل الغير مستلمة**`);
         }).catch(e => {
           errorCount++;
           msgCount++;
-          msg.edit(`**- [ :bookmark: :: ${msgCount} ] ・عدد الرسائل المرسلة**\n**- [ :inbox_tray: :: ${successCount} ] ・عدد الرسائل المستلمة**\n**- [ :outbox_tray: :: ${errorCount} ]・عدد الرسائل الغير مستلمة**`);//Toxic Code
+          msg.edit(`**- [ :bookmark: :: ${msgCount} ] ?عدد الرسائل المرسلة**\n**- [ :inbox_tray: :: ${successCount} ] ?عدد الرسائل المستلمة**\n**- [ :outbox_tray: :: ${errorCount} ]?عدد الرسائل الغير مستلمة**`);//Toxic Code
         });//Toxic Code
       });//Toxic Code
     });//Toxic Code
