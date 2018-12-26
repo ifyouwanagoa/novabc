@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {                           
-client.user.setGame(`♥ ℕova BC® | !bc ♥ `,'https://www.twitch.tv/ℕ o v a Codes♥');
+client.user.setGame(`♥ ℕova BC®♥ `,'https://www.twitch.tv/ℕ o v a Codes♥');
   })
 
 client.on('ready', () => {
