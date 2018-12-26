@@ -6,10 +6,7 @@ const client = new Discord.Client();
 // playing
 client.on('ready', () => {                           
 client.user.setGame(`♥ ℕova BC™ ♥ `,'https://www.twitch.tv/ℕ o v a Codes♥');
-  });
-     
-const Discord = require('discord.js');
-const client = new Discord.Client();
+  })
   } 
 });
 client.on('message',async message => {//Toxic Code
